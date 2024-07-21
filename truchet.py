@@ -38,13 +38,13 @@ def draw_tiles():
 if __name__ == "__main__":
     print(f'{window_height()}, {window_width()}')
     mode("world")
-    screensize(510,510)
+    screensize(1920,1080)
     setworldcoordinates(-5, -5, (2460)+5, (1440)+5)
-    setup(width=0.99, height=0.99, startx=None, starty=None)
+    setup(width=600, height=600, startx=None, starty=None)
     penup()
 
     size = 50
-    speed(10)
+    speed(0)
 
     ontimer(draw_tiles, 5000)
     mainloop()
